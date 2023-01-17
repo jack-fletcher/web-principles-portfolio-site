@@ -1,38 +1,57 @@
 @font-face {
-    font-family: "notosans";
-    src: url(assets/fonts/notosans/woff2/NotoSans-Black.woff2) format("woff2"), url(assets/fonts/notosans/woff/NotoSans-Black.woff) format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+font-family: "notosans";
+src: url(assets/fonts/notosans/woff2/NotoSans-Black.woff2) format("woff2"), url(assets/fonts/notosans/woff/NotoSans-Black.woff) format("woff");
+font-weight: normal;
+font-style: normal;
+font-display: swap;
 }
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('/assets/fonts/icomoon/icomoon.eot?ho2iqv');
-    src:  url('/assets/fonts/icomoon/icomoon.eot?ho2iqv#iefix') format('embedded-opentype'),
-      url('/assets/fonts/icomoon/icomoon.ttf?ho2iqv') format('truetype'),
-      url('/assets/fonts/icomoon/icomoon.woff?ho2iqv') format('woff'),
-      url('/assets/fonts/icomoon/icomoon.svg?ho2iqv#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+font-family: 'icomoon';
+src:  url('/assets/fonts/icomoon/icomoon.eot?ho2iqv');
+src:  url('/assets/fonts/icomoon/icomoon.eot?ho2iqv#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon/icomoon.ttf?ho2iqv') format('truetype'),
+    url('/assets/fonts/icomoon/icomoon.woff?ho2iqv') format('woff'),
+    url('/assets/fonts/icomoon/icomoon.svg?ho2iqv#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: block;
+}
   
+button:active,input[type=button]:active,input[type=submit]:active{
+   background-color:var(--accent-text) !important;
+   color: var(--background-colour) !important;
+}
 
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
   
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
+button,input, select, textarea {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-family: "notosans", serif;
+}
+
+input[type=number],input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      -moz-appearance: textfield;
+      appearance: textfield;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -252,13 +271,13 @@ nav > #navigation-logo
     justify-content: space-between;
     flex-basis: 50%;
 }
-#footer {
+.footer {
     text-align: right;
     width: 100%;
     bottom: 0;
     margin: 0;
 }
-#footer > p {
+.footer > p {
     margin: 0;
     padding-right: 2rem;
 }
@@ -362,12 +381,90 @@ a {
     color: var(--main-text);
   }
 
+  .subtitle-spacing {
+    margin: 5%;
+}
+
+/* currency-converter */
+
+#currency-converter-form {
+    padding: 2rem;
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.currency-converter-section{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    width: 100%;
+}
+
+#currency-converter-form > * {
+    flex: 1;
+}
+
+.currency-converter-subsection {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.currency-converter-subsection > * {
+    height: 50px;
+}
+.currency-converter-subsection > label {
+    flex: 1;
+    width: 100%;
+}
+
+.currency-converter-subsection > input,select {
+    flex: 2;
+    width: 100%;
+}
+#currency-converter-submit{
+    width: 50%;
+}
+
+#input-currency,#output-currency,#input-currency-value,#currency-converter-submit {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: var(--border-colour);
+    background-color: var(--primary-colour);
+    color: var(--main-text);
+    text-align: center;
+}
+
+/* forecaster */
+.chart-container {
+    flex: 1;
+    padding:3rem 0 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.forecaster-button-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 @media only screen and (max-width: 800px) {
     nav {
         bottom: 0;
         /* position:stick; */
     }
-    #footer {
+    .footer {
         position: relative;
         bottom: auto;
         padding-bottom: 3rem;
@@ -407,10 +504,15 @@ a {
     h3 {
         font-size: 1.25rem;
     }
-}
-
-.subtitle-spacing {
-    margin: 5%;
+    .currency-converter-section {
+        flex-direction: column;
+    }
+    .currency-converter-subsection { 
+        flex-direction: column;
+    }
+    .chart-container{
+        padding-top: 0;
+    }
 }
 
 /* animations */
@@ -449,7 +551,7 @@ a {
     :root {
         --background-colour: #fafafa;
         --primary-colour: #e4e5f1;
-        --main-text: #9394a5;
+        --main-text: #1a181a;
         --accent-text:#7520df; 
         --border-colour:#1a181a;
     }

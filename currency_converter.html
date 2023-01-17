@@ -1,32 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/8.3__iPad_Mini_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.5__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/12.9__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.2__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.5__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.9__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.9__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/8.3__iPad_Mini_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.2__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/12.9__iPad_Pro_landscape.png"
+    />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Jack Fletcher - Portfolio Site</title>
-</head>
-<body class="background-colour">
-<nav class="primary-colour"> 
-    <div id="navigation-logo">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Jack Fletcher - Currency Converter</title>
+  </head>
+  <body class="background-colour">
+    <nav class="primary-colour">
+      <div id="navigation-logo">
         <picture class="user-logo">
-            <source type="image/webp" srcset="assets/img/logo.webp">
-            <source type="image/png" srcset="assets/img/logo.png">
-            <img class="user-logo"src="assets/img/logo.webp" alt="Portfolio logo"/>
+          <source type="image/webp" srcset="assets/img/logo.webp" />
+          <source type="image/png" srcset="assets/img/logo.png" />
+          <img
+            class="user-logo"
+            src="assets/img/logo.webp"
+            alt="Portfolio logo"
+          />
         </picture>
-        <a class="user-logo-text accent-text" href="#home">Jack Fletcher</a>
-    </div>
-    <div id="navigation-links" class="primary-colour"> 
-        <a class="main-text navigation-link" href="#contact-me"><img class="nav-img" src="assets/img/contact-me.png" alt="Contact Me"></a>
-        <a class="main-text navigation-link" href="#testimonials"><img class="nav-img" src="assets/img/testimonials.webp" alt="Testimonials"></a>
-        <a class="main-text navigation-link" href="#home"><img class="nav-img" src="assets/img/home.png" alt="Home"></a>
-        <a class="main-text navigation-link" href="#projects"><img class="nav-img" src="assets/img/projects.webp" alt="Projects"></a>
-        <a class="main-text navigation-link" href="#about-me"><img class="nav-img" src="assets/img/about-me.png" alt="About Me"></a>
-    </div>
-</nav>   
-<div id="footer" class="primary-colour"><p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p></div>
-</body>
-</html>
+        <a class="user-logo-text accent-text" href="index.html#home"
+          >Jack Fletcher</a
+        >
+      </div>
+      <div id="navigation-links" class="primary-colour">
+        <a
+          class="main-text navigation-link"
+          aria-label="Contact Me"
+          href="index.html#contact-me"
+          ><span class="icon-contact-me nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Testimonials"
+          href="index.html#testimonials"
+          ><span class="icon-testimonials nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Home"
+          href="index.html#home"
+          ><span class="icon-home nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Projects"
+          href="index.html#projects"
+          ><span class="icon-projects nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="About Me"
+          href="index.html#about-me"
+          ><span class="icon-about-me nav-img"></span
+        ></a>
+      </div>
+    </nav>
 
+    <div class="full-screen">
+      <form id="currency-converter-form">
+        <h1 class="accent-text">Currency Converter</h1>
+        <div class="currency-converter-section">
+          <div class="currency-converter-subsection">
+            <label class="main-text" for="input-currency-value"
+              >Amount: (max 100000)</label
+            >
+            <input
+              type="number"
+              id="input-currency-value"
+              name="input-currency-value"
+              min="1"
+              max="100000"
+              required
+              value="1"
+            />
+          </div>
+          <div class="currency-converter-subsection">
+            <label class="main-text" for="input-currency"
+              >Source Currency:</label
+            >
+            <select
+              name="input-currency"
+              id="input-currency"
+              onchange="getCurrentExchangeRate()"
+            >
+              <option value="usd">U.S. Dollar (USD)</option>
+              <option value="eur">Euro (EUR)</option>
+              <option selected="selected" value="gbp">
+                U.K. Pound Sterling (GBP)
+              </option>
+              <option value="aud">Australian Dollar (AUD)</option>
+              <option value="cad">Canadian Dollar (CAD)</option>
+              <option value="jpy">Japanese Yen (JPY)</option>
+              <option value="chf">Swiss Franc (CHF)</option>
+              <option value="kmf">Comoro franc (KMF)</option>
+              <option value="afn">Afghan afghani (AFN)</option>
+              <option value="all">Albanian lek (ALL)</option>
+              <option value="dzd">Algerian Dinar (DZD)</option>
+              <option value="aoa">Angolan kwanza (AOA)</option>
+              <option value="ars">Argentine Peso (ARS)</option>
+              <option value="amd">Armenia Dram (AMD)</option>
+              <option value="awg">Aruban florin (AWG)</option>
+              <option value="azn">Azerbaijan Manat (AZN)</option>
+              <option value="bsd">Bahamian Dollar (BSD)</option>
+              <option value="bhd">Bahrain Dinar (BHD)</option>
+              <option value="bdt">Bangladeshi taka (BDT)</option>
+              <option value="bbd">Barbadian Dollar (BBD)</option>
+              <option value="byn">Belarussian Ruble (BYN)</option>
+              <option value="bzd">Belize dollar (BZD)</option>
+              <option value="bob">Bolivian Boliviano (BOB)</option>
+              <option value="bam">
+                Bosnia and Herzegovina convertible mark (BAM)
+              </option>
+              <option value="bwp">Botswana Pula (BWP)</option>
+              <option value="brl">Brazilian Real (BRL)</option>
+              <option value="bnd">Brunei Dollar (BND)</option>
+              <option value="bgn">Bulgarian Lev (BGN)</option>
+              <option value="bif">Burundian franc (BIF)</option>
+              <option value="khr">Cambodian riel (KHR)</option>
+              <option value="cve">Cape Verde escudo (CVE)</option>
+              <option value="xaf">Central African CFA Franc (XAF)</option>
+              <option value="xpf">CFP Franc (XPF)</option>
+              <option value="clp">Chilean Peso (CLP)</option>
+              <option value="cny">Chinese Yuan (CNY)</option>
+              <option value="cop">Colombian Peso (COP)</option>
+              <option value="cdf">Congolese franc (CDF)</option>
+              <option value="crc">Costa Rican Colón (CRC)</option>
+              <option value="hrk">Croatian Kuna (HRK)</option>
+              <option value="cup">Cuban peso (CUP)</option>
+              <option value="czk">Czech Koruna (CZK)</option>
+              <option value="dkk">Danish Krone (DKK)</option>
+              <option value="djf">Djiboutian franc (DJF)</option>
+              <option value="dop">Dominican Peso (DOP)</option>
+              <option value="xcd">East Caribbean Dollar (XCD)</option>
+              <option value="egp">Egyptian Pound (EGP)</option>
+              <option value="ern">Eritrean nakfa (ERN)</option>
+              <option value="etb">Ethiopian birr (ETB)</option>
+              <option value="fjd">Fiji Dollar (FFD)</option>
+              <option value="gmd">Gambian dalasi (GMD)</option>
+              <option value="gel">Georgian lari (GEL)</option>
+              <option value="ghs">Ghanaian Cedi (GHS)</option>
+              <option value="gip">Gibraltar pound (GIP)</option>
+              <option value="gtq">Guatemalan Quetzal (GTQ)</option>
+              <option value="gnf">Guinean franc (GNF)</option>
+              <option value="gyd">Guyanese dollar (GYD)</option>
+              <option value="htg">Haitian gourde (HTG)</option>
+              <option value="hnl">Honduran Lempira (HNL)</option>
+              <option value="hkd">Hong Kong Dollar (HKD)</option>
+              <option value="huf">Hungarian Forint (HUF)</option>
+              <option value="isk">Icelandic Krona (ISK)</option>
+              <option value="inr">Indian Rupee (INR)</option>
+              <option value="idr">Indonesian Rupiah (IDR)</option>
+              <option value="irr">Iranian rial (IRR)</option>
+              <option value="iqd">Iraqi dinar (IQD)</option>
+              <option value="ils">Israeli New Sheqel (ILS)</option>
+              <option value="jmd">Jamaican Dollar (JMD)</option>
+              <option value="jod">Jordanian Dinar (JOD)</option>
+              <option value="kzt">Kazakhstani Tenge (KZT)</option>
+              <option value="kes">Kenyan shilling (KES)</option>
+              <option value="kwd">Kuwaiti Dinar (KWD)</option>
+              <option value="kgs">Kyrgyzstan Som (KGS)</option>
+              <option value="lak">Lao kip (LAK)</option>
+              <option value="lbp">Lebanese Pound (LBP)</option>
+              <option value="lsl">Lesotho loti (LSL)</option>
+              <option value="lrd">Liberian dollar (LRD)</option>
+              <option value="lyd">Libyan Dinar (LYD)</option>
+              <option value="mop">Macanese pataca (MOP)</option>
+              <option value="mkd">Macedonian denar (MKD)</option>
+              <option value="mga">Malagasy ariary (MGA)</option>
+              <option value="mwk">Malawian kwacha (MWK)</option>
+              <option value="myr">Malaysian Ringgit (MYR)</option>
+              <option value="mvr">Maldivian rufiyaa (MVR)</option>
+              <option value="mru">Mauritanian ouguiya (MRU)</option>
+              <option value="mro">Mauritanian Ouguiya (MRO)</option>
+              <option value="mur">Mauritian Rupee (MUR)</option>
+              <option value="mxn">Mexican Peso (MXN)</option>
+              <option value="mdl">Moldova Lei (MDL)</option>
+              <option value="mnt">Mongolian togrog (MNT)</option>
+              <option value="mad">Moroccan Dirham (MAD)</option>
+              <option value="mzn">Mozambican metical (MZN)</option>
+              <option value="mmk">Myanma Kyat (MMK)</option>
+              <option value="nad">Namibian dollar (NAD)</option>
+              <option value="npr">Nepalese Rupee (NPR)</option>
+              <option value="ang">Neth. Antillean Guilder (ANG)</option>
+              <option value="twd">New Taiwan Dollar (TWD)</option>
+              <option value="tmt">New Turkmenistan Manat (TMT)</option>
+              <option value="nzd">New Zealand Dollar (NZD)</option>
+              <option value="nio">Nicaraguan Córdoba (NIO)</option>
+              <option value="ngn">Nigerian Naira (NGN)</option>
+              <option value="nok">Norwegian Krone (NOK)</option>
+              <option value="omr">Omani Rial (OMR)</option>
+              <option value="pkr">Pakistani Rupee (PKR)</option>
+              <option value="pab">Panamanian Balboa (PAB)</option>
+              <option value="pgk">Papua New Guinean kina (PGK)</option>
+              <option value="pyg">Paraguayan Guaraní (PYG)</option>
+              <option value="pen">Peruvian Nuevo Sol (PEN)</option>
+              <option value="php">Philippine Peso (PHP)</option>
+              <option value="pln">Polish Zloty (PLN)</option>
+              <option value="qar">Qatari Rial (QAR)</option>
+              <option value="ron">Romanian New Leu (RON)</option>
+              <option value="rub">Russian Rouble (RUB)</option>
+              <option value="rwf">Rwandan franc (RWF)</option>
+              <option value="svc">Salvadoran colon (SVC)</option>
+              <option value="wst">Samoan tala (WST)</option>
+              <option value="stn">São Tomé and Príncipe Dobra (STN)</option>
+              <option value="sar">Saudi Riyal (SAR)</option>
+              <option value="rsd">Serbian Dinar (RSD)</option>
+              <option value="scr">Seychelles rupee (SCR)</option>
+              <option value="sgd">Singapore Dollar (SGD)</option>
+              <option value="sbd">Solomon Islands dollar (SBD)</option>
+              <option value="sos">Somali shilling (SOS)</option>
+              <option value="zar">South African Rand (ZAR)</option>
+              <option value="krw">South Korean Won (KRW)</option>
+              <option value="ssp">South Sudanese pound (SSP)</option>
+              <option value="lkr">Sri Lanka Rupee (LKR)</option>
+              <option value="sdg">Sudanese pound (SDG)</option>
+              <option value="srd">Surinamese dollar (SRD)</option>
+              <option value="szl">Swazi lilangeni (SZL)</option>
+              <option value="sek">Swedish Krona (SEK)</option>
+              <option value="syp">Syrian pound (SYP)</option>
+              <option value="tjs">Tajikistan Ruble (TJS)</option>
+              <option value="tzs">Tanzanian shilling (TZS)</option>
+              <option value="thb">Thai Baht (THB)</option>
+              <option value="top">Tongan paʻanga (TOP)</option>
+              <option value="ttd">Trinidad Tobago Dollar (TTD)</option>
+              <option value="tnd">Tunisian Dinar (TND)</option>
+              <option value="try">Turkish Lira (TRY)</option>
+              <option value="aed">U.A.E Dirham (AED)</option>
+              <option value="ugx">Ugandan shilling (UGX)</option>
+              <option value="uah">Ukrainian Hryvnia (UAH)</option>
+              <option value="uyu">Uruguayan Peso (UYU)</option>
+              <option value="uzs">Uzbekistan Sum (UZS)</option>
+              <option value="vuv">Vanuatu vatu (VUV)</option>
+              <option value="ves">Venezuelan Bolivar (VES)</option>
+              <option value="vnd">Vietnamese Dong (VND)</option>
+              <option value="xof">West African CFA Franc (XOF)</option>
+              <option value="yer">Yemeni rial (YER)</option>
+              <option value="zmw">Zambian kwacha (ZMW)</option>
+            </select>
+          </div>
+          <div class="currency-converter-subsection">
+            <label class="main-text" for="output-currency"
+              >Destination Currency:</label
+            >
+            <select
+              name="output-currency"
+              id="output-currency"
+              onchange="getCurrentExchangeRate()"
+            >
+              <option value="usd">U.S. Dollar (USD)</option>
+              <option value="eur" selected="selected">Euro (EUR)</option>
+              <option value="gbp">U.K. Pound Sterling (GBP)</option>
+              <option value="aud">Australian Dollar (AUD)</option>
+              <option value="cad">Canadian Dollar (CAD)</option>
+              <option value="jpy">Japanese Yen (JPY)</option>
+              <option value="chf">Swiss Franc (CHF)</option>
+              <option value="kmf">Comoro franc (KMF)</option>
+              <option value="afn">Afghan afghani (AFN)</option>
+              <option value="all">Albanian lek (ALL)</option>
+              <option value="dzd">Algerian Dinar (DZD)</option>
+              <option value="aoa">Angolan kwanza (AOA)</option>
+              <option value="ars">Argentine Peso (ARS)</option>
+              <option value="amd">Armenia Dram (AMD)</option>
+              <option value="awg">Aruban florin (AWG)</option>
+              <option value="azn">Azerbaijan Manat (AZN)</option>
+              <option value="bsd">Bahamian Dollar (BSD)</option>
+              <option value="bhd">Bahrain Dinar (BHD)</option>
+              <option value="bdt">Bangladeshi taka (BDT)</option>
+              <option value="bbd">Barbadian Dollar (BBD)</option>
+              <option value="byn">Belarussian Ruble (BYN)</option>
+              <option value="bzd">Belize dollar (BZD)</option>
+              <option value="bob">Bolivian Boliviano (BOB)</option>
+              <option value="bam">
+                Bosnia and Herzegovina convertible mark (BAM)
+              </option>
+              <option value="bwp">Botswana Pula (BWP)</option>
+              <option value="brl">Brazilian Real (BRL)</option>
+              <option value="bnd">Brunei Dollar (BND)</option>
+              <option value="bgn">Bulgarian Lev (BGN)</option>
+              <option value="bif">Burundian franc (BIF)</option>
+              <option value="khr">Cambodian riel (KHR)</option>
+              <option value="cve">Cape Verde escudo (CVE)</option>
+              <option value="xaf">Central African CFA Franc (XAF)</option>
+              <option value="xpf">CFP Franc (XPF)</option>
+              <option value="clp">Chilean Peso (CLP)</option>
+              <option value="cny">Chinese Yuan (CNY)</option>
+              <option value="cop">Colombian Peso (COP)</option>
+              <option value="cdf">Congolese franc (CDF)</option>
+              <option value="crc">Costa Rican Colón (CRC)</option>
+              <option value="hrk">Croatian Kuna (HRK)</option>
+              <option value="cup">Cuban peso (CUP)</option>
+              <option value="czk">Czech Koruna (CZK)</option>
+              <option value="dkk">Danish Krone (DKK)</option>
+              <option value="djf">Djiboutian franc (DJF)</option>
+              <option value="dop">Dominican Peso (DOP)</option>
+              <option value="xcd">East Caribbean Dollar (XCD)</option>
+              <option value="egp">Egyptian Pound (EGP)</option>
+              <option value="ern">Eritrean nakfa (ERN)</option>
+              <option value="etb">Ethiopian birr (ETB)</option>
+              <option value="fjd">Fiji Dollar (FFD)</option>
+              <option value="gmd">Gambian dalasi (GMD)</option>
+              <option value="gel">Georgian lari (GEL)</option>
+              <option value="ghs">Ghanaian Cedi (GHS)</option>
+              <option value="gip">Gibraltar pound (GIP)</option>
+              <option value="gtq">Guatemalan Quetzal (GTQ)</option>
+              <option value="gnf">Guinean franc (GNF)</option>
+              <option value="gyd">Guyanese dollar (GYD)</option>
+              <option value="htg">Haitian gourde (HTG)</option>
+              <option value="hnl">Honduran Lempira (HNL)</option>
+              <option value="hkd">Hong Kong Dollar (HKD)</option>
+              <option value="huf">Hungarian Forint (HUF)</option>
+              <option value="isk">Icelandic Krona (ISK)</option>
+              <option value="inr">Indian Rupee (INR)</option>
+              <option value="idr">Indonesian Rupiah (IDR)</option>
+              <option value="irr">Iranian rial (IRR)</option>
+              <option value="iqd">Iraqi dinar (IQD)</option>
+              <option value="ils">Israeli New Sheqel (ILS)</option>
+              <option value="jmd">Jamaican Dollar (JMD)</option>
+              <option value="jod">Jordanian Dinar (JOD)</option>
+              <option value="kzt">Kazakhstani Tenge (KZT)</option>
+              <option value="kes">Kenyan shilling (KES)</option>
+              <option value="kwd">Kuwaiti Dinar (KWD)</option>
+              <option value="kgs">Kyrgyzstan Som (KGS)</option>
+              <option value="lak">Lao kip (LAK)</option>
+              <option value="lbp">Lebanese Pound (LBP)</option>
+              <option value="lsl">Lesotho loti (LSL)</option>
+              <option value="lrd">Liberian dollar (LRD)</option>
+              <option value="lyd">Libyan Dinar (LYD)</option>
+              <option value="mop">Macanese pataca (MOP)</option>
+              <option value="mkd">Macedonian denar (MKD)</option>
+              <option value="mga">Malagasy ariary (MGA)</option>
+              <option value="mwk">Malawian kwacha (MWK)</option>
+              <option value="myr">Malaysian Ringgit (MYR)</option>
+              <option value="mvr">Maldivian rufiyaa (MVR)</option>
+              <option value="mru">Mauritanian ouguiya (MRU)</option>
+              <option value="mro">Mauritanian Ouguiya (MRO)</option>
+              <option value="mur">Mauritian Rupee (MUR)</option>
+              <option value="mxn">Mexican Peso (MXN)</option>
+              <option value="mdl">Moldova Lei (MDL)</option>
+              <option value="mnt">Mongolian togrog (MNT)</option>
+              <option value="mad">Moroccan Dirham (MAD)</option>
+              <option value="mzn">Mozambican metical (MZN)</option>
+              <option value="mmk">Myanma Kyat (MMK)</option>
+              <option value="nad">Namibian dollar (NAD)</option>
+              <option value="npr">Nepalese Rupee (NPR)</option>
+              <option value="ang">Neth. Antillean Guilder (ANG)</option>
+              <option value="twd">New Taiwan Dollar (TWD)</option>
+              <option value="tmt">New Turkmenistan Manat (TMT)</option>
+              <option value="nzd">New Zealand Dollar (NZD)</option>
+              <option value="nio">Nicaraguan Córdoba (NIO)</option>
+              <option value="ngn">Nigerian Naira (NGN)</option>
+              <option value="nok">Norwegian Krone (NOK)</option>
+              <option value="omr">Omani Rial (OMR)</option>
+              <option value="pkr">Pakistani Rupee (PKR)</option>
+              <option value="pab">Panamanian Balboa (PAB)</option>
+              <option value="pgk">Papua New Guinean kina (PGK)</option>
+              <option value="pyg">Paraguayan Guaraní (PYG)</option>
+              <option value="pen">Peruvian Nuevo Sol (PEN)</option>
+              <option value="php">Philippine Peso (PHP)</option>
+              <option value="pln">Polish Zloty (PLN)</option>
+              <option value="qar">Qatari Rial (QAR)</option>
+              <option value="ron">Romanian New Leu (RON)</option>
+              <option value="rub">Russian Rouble (RUB)</option>
+              <option value="rwf">Rwandan franc (RWF)</option>
+              <option value="svc">Salvadoran colon (SVC)</option>
+              <option value="wst">Samoan tala (WST)</option>
+              <option value="stn">São Tomé and Príncipe Dobra (STN)</option>
+              <option value="sar">Saudi Riyal (SAR)</option>
+              <option value="rsd">Serbian Dinar (RSD)</option>
+              <option value="scr">Seychelles rupee (SCR)</option>
+              <option value="sgd">Singapore Dollar (SGD)</option>
+              <option value="sbd">Solomon Islands dollar (SBD)</option>
+              <option value="sos">Somali shilling (SOS)</option>
+              <option value="zar">South African Rand (ZAR)</option>
+              <option value="krw">South Korean Won (KRW)</option>
+              <option value="ssp">South Sudanese pound (SSP)</option>
+              <option value="lkr">Sri Lanka Rupee (LKR)</option>
+              <option value="sdg">Sudanese pound (SDG)</option>
+              <option value="srd">Surinamese dollar (SRD)</option>
+              <option value="szl">Swazi lilangeni (SZL)</option>
+              <option value="sek">Swedish Krona (SEK)</option>
+              <option value="syp">Syrian pound (SYP)</option>
+              <option value="tjs">Tajikistan Ruble (TJS)</option>
+              <option value="tzs">Tanzanian shilling (TZS)</option>
+              <option value="thb">Thai Baht (THB)</option>
+              <option value="top">Tongan paʻanga (TOP)</option>
+              <option value="ttd">Trinidad Tobago Dollar (TTD)</option>
+              <option value="tnd">Tunisian Dinar (TND)</option>
+              <option value="try">Turkish Lira (TRY)</option>
+              <option value="aed">U.A.E Dirham (AED)</option>
+              <option value="ugx">Ugandan shilling (UGX)</option>
+              <option value="uah">Ukrainian Hryvnia (UAH)</option>
+              <option value="uyu">Uruguayan Peso (UYU)</option>
+              <option value="uzs">Uzbekistan Sum (UZS)</option>
+              <option value="vuv">Vanuatu vatu (VUV)</option>
+              <option value="ves">Venezuelan Bolivar (VES)</option>
+              <option value="vnd">Vietnamese Dong (VND)</option>
+              <option value="xof">West African CFA Franc (XOF)</option>
+              <option value="yer">Yemeni rial (YER)</option>
+              <option value="zmw">Zambian kwacha (ZMW)</option>
+            </select>
+          </div>
+        </div>
+        <p id="currency-converter-exchange-rate" class="main-text"></p>
+        <p id="currency-converter-feedback" class="main-text"></p>
+        <input
+          id="currency-converter-submit"
+          type="button"
+          value="Calculate"
+          onclick="getFloatRatesData()"
+        />
+        <p id="currency-converter-info" class="main-text"></p>
+        <p id="output-currency-value" class="main-text"></p>
+      </form>
+    </div>
+    <div class="primary-colour footer">
+      <p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p>
+    </div>
+  </body>
+</html>
