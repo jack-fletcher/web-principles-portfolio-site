@@ -1,370 +1,875 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/iPhone_11__iPhone_XR_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Pro_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/8.3__iPad_Mini_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.5__iPad_Air_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/12.9__iPad_Pro_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.2__iPad_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Pro_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.5__iPad_Air_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.9__iPad_Air_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Pro_Max_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/iPhone_11__iPhone_XR_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.9__iPad_Air_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Pro_Max_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/8.3__iPad_Mini_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.2__iPad_landscape.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png">
-    <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/12.9__iPad_Pro_landscape.png">
-    <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/8.3__iPad_Mini_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.5__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/12.9__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.2__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.5__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.9__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.9__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/8.3__iPad_Mini_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.2__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/12.9__iPad_Pro_landscape.png"
+    />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Jack Fletcher - Portfolio Site</title>
-</head>
-<body class="background-colour">
-<nav class="primary-colour"> 
-    <div id="navigation-logo">
+  </head>
+  <body class="background-colour">
+    <nav class="primary-colour">
+      <div id="navigation-logo">
         <picture class="user-logo">
-            <source type="image/webp" srcset="assets/img/logo.webp">
-            <source type="image/png" srcset="assets/img/logo.png">
-            <img class="user-logo" src="assets/img/logo.webp" alt="Portfolio logo">
+          <source type="image/webp" srcset="assets/img/logo.webp" />
+          <source type="image/png" srcset="assets/img/logo.png" />
+          <img
+            class="user-logo"
+            src="assets/img/logo.webp"
+            alt="Portfolio logo"
+          />
         </picture>
         <a class="user-logo-text accent-text" href="#home">Jack Fletcher</a>
+      </div>
+      <div id="navigation-links" class="primary-colour">
+        <a
+          class="main-text navigation-link"
+          aria-label="Contact Me"
+          href="#contact-me"
+          ><span class="icon-contact-me nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Testimonials"
+          href="#testimonials"
+          ><span class="icon-testimonials nav-img"></span
+        ></a>
+        <a class="main-text navigation-link" aria-label="Home" href="#home"
+          ><span class="icon-home nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Projects"
+          href="#projects"
+          ><span class="icon-projects nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="About Me"
+          href="#about-me"
+          ><span class="icon-about-me nav-img"></span
+        ></a>
+      </div>
+    </nav>
+    <div id="home" class="full-screen">
+      <h1 class="accent-text centered-text fade-in-2s">Hi, I'm Jack.</h1>
+      <h2 class="main-text centered-text fade-in-4s">Software Engineer</h2>
+      <h2 class="main-text centered-text fade-in-6s">Game Developer</h2>
+      <h2 class="main-text centered-text fade-in-8s">Cat Fan</h2>
     </div>
-    <div id="navigation-links" class="primary-colour"> 
-        <a class="main-text navigation-link" aria-label="Contact Me" href="#contact-me"><span class="icon-contact-me nav-img"></span></a>
-        <a class="main-text navigation-link" aria-label="Testimonials" href="#testimonials"><span class="icon-testimonials nav-img"></span></a>
-        <a class="main-text navigation-link" aria-label="Home" href="#home"><span class="icon-home nav-img"></span></a>
-        <a class="main-text navigation-link" aria-label="Projects" href="#projects"><span class="icon-projects nav-img"></span></a>
-        <a class="main-text navigation-link" aria-label="About Me" href="#about-me"><span class="icon-about-me nav-img"></span></a>
-    </div>
-</nav>   
-<div id="home" class="full-screen">
-    <h1 class="accent-text centered-text fade-in-2s">Hi, I'm Jack.</h1>
-    <h2 class="main-text centered-text fade-in-4s">Software Engineer</h2>
-    <h2 class="main-text centered-text fade-in-6s">Game Developer</h2>
-    <h2 class="main-text centered-text fade-in-8s">Cat Fan</h2>
-</div>
-<div id="about-me" class="full-screen">
-    <div class="horizontal-card">
+    <div id="about-me" class="full-screen">
+      <div class="horizontal-card">
         <h1 class="accent-text card-title">About Me.</h1>
         <div class="card-box">
-            <h2 class="accent-text card-tagline">A graduate with a desire to learn.</h2>
-            <p class="main-text">Hi, I'm Jack! I've been making video games for about five years now and I still love it. I find the innovative methods programmers had to utilize for older consoles fascinating. 
-                I graduated from the University of Plymouth after studying Computing & Games Development (BSc) and continued my education at Staffordshire University, studying Computer Science (MSc). 
-                In my time, I've had the opportunity to work with some incredible tools:</p>
-            <ul class="list">
-                <li class="list-item accent-text"><span class="main-text">C#</span></li>
-                <li class="list-item accent-text"><span class="main-text">Java</span></li>
-                <li class="list-item accent-text"><span class="main-text">Matlab</span></li>
-                <li class="list-item accent-text"><span class="main-text">HTML/CSS</span></li>
-                <li class="list-item accent-text"><span class="main-text">Unity Engine</span></li>
-                <li class="list-item accent-text"><span class="main-text">Python</span></li>
-                <li class="list-item accent-text"><span class="main-text">C++</span></li>
-                <li class="list-item accent-text"><span class="main-text">React</span></li>
-                <li class="list-item accent-text"><span class="main-text">React Native</span></li>
-                <li class="list-item accent-text"><span class="main-text">Oracle SQL</span></li>
-            </ul>
-            <p class="main-text">Curious about my work? Check out my <a class="accent-text" href="#projects">Projects</a>.</p>
+          <h2 class="accent-text card-tagline">
+            A graduate with a desire to learn.
+          </h2>
+          <p class="main-text">
+            Hi, I'm Jack! I've been making video games for about five years now
+            and I still love it. I find the innovative methods programmers had
+            to utilize for older consoles fascinating. I graduated from the
+            University of Plymouth after studying Computing & Games Development
+            (BSc) and continued my education at Staffordshire University,
+            studying Computer Science (MSc). In my time, I've had the
+            opportunity to work with some incredible tools:
+          </p>
+          <ul class="list">
+            <li class="list-item accent-text">
+              <span class="main-text">C#</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">Java</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">Matlab</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">HTML/CSS</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">Unity Engine</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">Python</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">C++</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">React</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">React Native</span>
+            </li>
+            <li class="list-item accent-text">
+              <span class="main-text">Oracle SQL</span>
+            </li>
+          </ul>
+          <p class="main-text">
+            Curious about my work? Check out my
+            <a class="accent-text" href="#projects">Projects</a>.
+          </p>
         </div>
+      </div>
     </div>
-</div>
-<div id="my-history" class="full-screen">
-    <h1 class="accent-text subtitle-spacing">Employment History</h1>
-    <div class="horizontal-cards">
+    <div id="my-history" class="full-screen">
+      <h1 class="accent-text subtitle-spacing">Employment History</h1>
+      <div class="horizontal-cards">
         <div class="horizontal-card">
-            <h2 class="main-text card-title">Junior Content Developer, <a class="accent-text" href="https://www.jagex.com/" target="_blank">Jagex</a></h2>
-            <div class="card-box">
-                <p class="accent-text card-date">Sept 2022 - Current</p>
-                <p class="main-text">Currently, I'm working on some exciting secret things for Runescape at Jagex! My job role focuses on both the creative and technical aspects of game development; where I own my projects from design to release.</p>
-            </div>
+          <h2 class="main-text card-title">
+            Junior Content Developer,
+            <a class="accent-text" href="https://www.jagex.com/" target="_blank"
+              >Jagex</a
+            >
+          </h2>
+          <div class="card-box">
+            <p class="accent-text card-date">Sept 2022 - Current</p>
+            <p class="main-text">
+              Currently, I'm working on some exciting secret things for
+              Runescape at Jagex! My job role focuses on both the creative and
+              technical aspects of game development; where I own my projects
+              from design to release.
+            </p>
+          </div>
         </div>
         <div class="horizontal-card">
-            <h2 class="main-text card-title">Implementation Consultant, <a class="accent-text" href="https://synertec.co.uk/" target="_blank">Synertec</a></h2>
-            <div class="card-box">
-                <p class="accent-text card-date">Oct 2020 - Sept 2021</p>
-                <p class="main-text">I used a proprietary programming language called 'Prism' alongside inhouse tools to develop routing rules and visuals for customers documents based on technical requirements and customer feedback.</p>
-            </div>
+          <h2 class="main-text card-title">
+            Implementation Consultant,
+            <a
+              class="accent-text"
+              href="https://synertec.co.uk/"
+              target="_blank"
+              >Synertec</a
+            >
+          </h2>
+          <div class="card-box">
+            <p class="accent-text card-date">Oct 2020 - Sept 2021</p>
+            <p class="main-text">
+              I used a proprietary programming language called 'Prism' alongside
+              inhouse tools to develop routing rules and visuals for customers
+              documents based on technical requirements and customer feedback.
+            </p>
+          </div>
         </div>
+      </div>
+      <h1 class="accent-text subtitle-spacing">Academic History</h1>
+      <div class="horizontal-cards">
+        <div class="horizontal-card">
+          <h2 class="main-text card-title">
+            Computer Science MSc,
+            <a
+              class="accent-text"
+              href="https://www.staffs.ac.uk/"
+              target="_blank"
+              >Staffordshire University</a
+            >
+          </h2>
+          <div class="card-box">
+            <p class="accent-text card-date">Sept 2021 - Current</p>
+            <div style="overflow-x: auto">
+              <table>
+                <tr>
+                  <th class="accent-text">Module Code</th>
+                  <th class="accent-text">Module Name</th>
+                  <th class="accent-text">Description</th>
+                </tr>
+                <tr>
+                  <td class="main-text">COIS71180</td>
+                  <td class="main-text">Managing Emergent Technologies</td>
+                  <td class="main-text">
+                    Exploring emergent technologies and potential uses for them.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="main-text">COIS71208</td>
+                  <td class="main-text">Database Management & Security</td>
+                  <td class="main-text">An introduction to SQL</td>
+                </tr>
+                <tr>
+                  <td class="main-text">COCS71161</td>
+                  <td class="main-text">Penetration Testing</td>
+                  <td class="main-text">
+                    An introduction to Penetration Testing using Parrot OS
+                  </td>
+                </tr>
+                <tr>
+                  <td class="main-text">COWB70385</td>
+                  <td class="main-text">Mobile Application Development</td>
+                  <td class="main-text">
+                    An introduction to mobile application development using
+                    React Native
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="horizontal-card">
+          <h2 class="main-text card-title">
+            Computing & Games Development BSc,
+            <a
+              class="accent-text"
+              href="https://www.plymouth.ac.uk/"
+              target="_blank"
+              >University of Plymouth</a
+            >
+          </h2>
+          <div class="card-box">
+            <p class="accent-text card-date">Sept 2017 - Sept 2020</p>
+            <table>
+              <tr>
+                <th class="accent-text">Module Code</th>
+                <th class="accent-text">Module Name</th>
+                <th class="accent-text">Description</th>
+              </tr>
+              <tr>
+                <td class="main-text">AINT151</td>
+                <td class="main-text">Web Game Technologies</td>
+                <td class="main-text">
+                  Introduction to web technologies such as HTML, CSS and
+                  JavaScript
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">SOFT152</td>
+                <td class="main-text">Software Engineering</td>
+                <td class="main-text">Introduction to C#</td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT152</td>
+                <td class="main-text">Games Workshop</td>
+                <td class="main-text">
+                  Creating a 3D application in the Unity Engine
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT153PP</td>
+                <td class="main-text">Intelligent Systems</td>
+                <td class="main-text">
+                  Introduction to Artificial Intelligence
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">SOFT153</td>
+                <td class="main-text">
+                  Algorithms, Data Structures and Mathematics
+                </td>
+                <td class="main-text">Introduction to data structures in C#</td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT252</td>
+                <td class="main-text">
+                  Computation Theory and Artificial Intelligence
+                </td>
+                <td class="main-text">
+                  Introduction to advanced machine learning concepts
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT254</td>
+                <td class="main-text">Interactive Systems Workshop</td>
+                <td class="main-text">
+                  Developing an interactive application with a client
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT255</td>
+                <td class="main-text">
+                  Artificial Intelligence for Game Development
+                </td>
+                <td class="main-text">
+                  Introduction to Evolutionary Algorithms
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">SOFT252</td>
+                <td class="main-text">
+                  Object-oriented Software Engineering with Design Patterns
+                </td>
+                <td class="main-text">
+                  Introduction to design patterns in Java
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">AINT351</td>
+                <td class="main-text">Machine Learning</td>
+                <td class="main-text">
+                  Developing a neural network in Matlab to simulate a robot arm
+                </td>
+              </tr>
+              <tr>
+                <td class="main-text">SOFT356</td>
+                <td class="main-text">Programming for Entertainment Systems</td>
+                <td class="main-text">
+                  Introduction to C++ via developing a model loader
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-    <h1 class="accent-text subtitle-spacing">Academic History</h1>
-    <div class="horizontal-cards">
-        <div class="horizontal-card">
-            <h2 class="main-text card-title">Computer Science MSc, <a class="accent-text" href="https://www.staffs.ac.uk/" target="_blank">Staffordshire University</a></h2>
-            <div class="card-box">
-                <p class="accent-text card-date">Sept 2021 - Current</p>
-                <div style="overflow-x:auto;">
-                    <table>
-                        <tr>
-                            <th class="accent-text">Module Code</th>
-                            <th class="accent-text">Module Name</th>
-                            <th class="accent-text">Description</th>
-                        </tr>
-                        <tr>
-                            <td class="main-text">COIS71180 </td>
-                            <td class="main-text">Managing Emergent Technologies</td>
-                            <td class="main-text">Exploring emergent technologies and potential uses for them.</td>
-                        </tr>
-                        <tr>
-                            <td class="main-text">COIS71208 </td>
-                            <td class="main-text"> Database Management & Security</td>
-                            <td class="main-text">An introduction to SQL</td>
-                        </tr>
-                        <tr>
-                            <td class="main-text">COCS71161 </td>
-                            <td class="main-text">Penetration Testing</td>
-                            <td class="main-text">An introduction to Penetration Testing using Parrot OS</td>
-                        </tr>
-                        <tr>
-                            <td class="main-text">COWB70385 </td>
-                            <td class="main-text">Mobile Application Development</td>
-                            <td class="main-text">An introduction to mobile application development using React Native</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="horizontal-card">
-            <h2 class="main-text card-title">Computing & Games Development BSc, <a class="accent-text" href="https://www.plymouth.ac.uk/" target="_blank">University of Plymouth</a></h2>
-            <div class="card-box">
-                <p class="accent-text card-date">Sept 2017 - Sept 2020</p>
-                <table>
-                    <tr>
-                        <th class="accent-text">Module Code</th>
-                        <th class="accent-text">Module Name</th>
-                        <th class="accent-text">Description</th>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT151</td>
-                        <td class="main-text">Web Game Technologies</td>
-                        <td class="main-text">Introduction to web technologies such as HTML, CSS and JavaScript</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">SOFT152</td>
-                        <td class="main-text">Software Engineering</td>
-                        <td class="main-text">Introduction to C#</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT152</td>
-                        <td class="main-text">Games Workshop</td>
-                        <td class="main-text">Creating a 3D application in the Unity Engine</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT153PP</td>
-                        <td class="main-text">Intelligent Systems</td>
-                        <td class="main-text">Introduction to Artificial Intelligence</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">SOFT153</td>
-                        <td class="main-text">Algorithms, Data Structures and Mathematics</td>
-                        <td class="main-text">Introduction to data structures in C#</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT252</td>
-                        <td class="main-text">Computation Theory and Artificial Intelligence</td>
-                        <td class="main-text">Introduction to advanced machine learning concepts</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT254</td>
-                        <td class="main-text">Interactive Systems Workshop</td>
-                        <td class="main-text">Developing an interactive application with a client</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT255</td>
-                        <td class="main-text">Artificial Intelligence for Game Development</td>
-                        <td class="main-text">Introduction to Evolutionary Algorithms</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">SOFT252</td>
-                        <td class="main-text">Object-oriented Software Engineering with Design Patterns</td>
-                        <td class="main-text">Introduction to design patterns in Java</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">AINT351</td>
-                        <td class="main-text">Machine Learning</td>
-                        <td class="main-text">Developing a neural network in Matlab to simulate a robot arm</td>
-                    </tr>
-                    <tr>
-                        <td class="main-text">SOFT356</td>
-                        <td class="main-text">Programming for Entertainment Systems</td>
-                        <td class="main-text">Introduction to C++ via developing a model loader</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="testimonials" class="full-screen">
-    <h1 class="accent-text subtitle-spacing">Testimonials</h1>
-    <div class="horizontal-cards">
+    <div id="testimonials" class="full-screen">
+      <h1 class="accent-text subtitle-spacing">Testimonials</h1>
+      <div class="horizontal-cards">
         <div class="testimony-horizontal-card">
-            <div class="flex-card-box">
-                <p class="main-text card-title">Samantha Sully</p>
-                <picture>
-                    <source media="(min-width: 800px)" type="image/webp" srcset="assets/img/samantha-sully-photo-2x.webp">
-                    <source media="(min-width: 800px)" type="image/png" srcset="assets/img/samantha-sully-photo-2x.png">
-                    <source type="image/webp" srcset="assets/img/samantha-sully-photo.webp">
-                    <source type="image/jpg" srcset="assets/img/samantha-sully-photo.jpg">
-                    <img class="card-image rounded-image" src="assets/img/samantha-sully-photo.webp" alt="Testimony author - Samantha Sully">
-                </picture>
-            </div>
-            <div class="card-box">
-                <p class="accent-text card-tagline">"Well organised and professional"</p>
-                <p class="main-text">Jack is a well organised and professional. He puts care into each project with crystal clear communication between client and team. His emphasis on intuitive, simple, effective design affords a quality product that will be in use for years to come.
-                </p>
-            </div>
+          <div class="flex-card-box">
+            <p class="main-text card-title">Samantha Sully</p>
+            <picture>
+              <source
+                media="(min-width: 800px)"
+                type="image/webp"
+                srcset="assets/img/samantha-sully-photo-2x.webp"
+              />
+              <source
+                media="(min-width: 800px)"
+                type="image/png"
+                srcset="assets/img/samantha-sully-photo-2x.png"
+              />
+              <source
+                type="image/webp"
+                srcset="assets/img/samantha-sully-photo.webp"
+              />
+              <source
+                type="image/jpg"
+                srcset="assets/img/samantha-sully-photo.jpg"
+              />
+              <img
+                class="card-image rounded-image"
+                src="assets/img/samantha-sully-photo.webp"
+                alt="Testimony author - Samantha Sully"
+              />
+            </picture>
+          </div>
+          <div class="card-box">
+            <p class="accent-text card-tagline">
+              "Well organised and professional"
+            </p>
+            <p class="main-text">
+              Jack is a well organised and professional. He puts care into each
+              project with crystal clear communication between client and team.
+              His emphasis on intuitive, simple, effective design affords a
+              quality product that will be in use for years to come.
+            </p>
+          </div>
         </div>
         <div class="testimony-horizontal-card">
-            <div class="flex-card-box">
-                <p class="main-text card-title">(Anonymised) PEC Agent</p>
-                <picture>
-                    <source type="image/webp" srcset="assets/img/about-me.webp">
-                    <source type="image/png" srcset="assets/img/about-me.png">
-                    <img class="card-image rounded-image" src="assets/img/about-me.webp" alt="Testimony author - PEC Agent">
-                </picture>
-            </div>
-            <div class="card-box">
-                <p class="accent-text card-tagline">"It was a pleasure working with you"</p>
-                <p class="main-text">Working with Jack and team was fantastic. They were professional and always able to quickly digest the information I gave them.
-                </p>
-            </div>
+          <div class="flex-card-box">
+            <p class="main-text card-title">(Anonymised) PEC Agent</p>
+            <picture>
+              <source type="image/webp" srcset="assets/img/about-me.webp" />
+              <source type="image/png" srcset="assets/img/about-me.png" />
+              <img
+                class="card-image rounded-image"
+                src="assets/img/about-me.webp"
+                alt="Testimony author - PEC Agent"
+              />
+            </picture>
+          </div>
+          <div class="card-box">
+            <p class="accent-text card-tagline">
+              "It was a pleasure working with you"
+            </p>
+            <p class="main-text">
+              Working with Jack and team was fantastic. They were professional
+              and always able to quickly digest the information I gave them.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="projects" class="full-screen">
-    <h1 class="accent-text subtitle-spacing">Projects</h1>
-    <div class="vertical-cards">
+    <div id="projects" class="full-screen">
+      <h1 class="accent-text subtitle-spacing">Projects</h1>
+      <div class="vertical-cards">
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Bloodletting</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/bloodletting.webp">
-                    <source type="image/png" srcset="assets/img/bloodletting.png">
-                    <img class="vertical-card-image" src="assets/img/bloodletting.webp" alt="Bloodletting">
-                </picture>
-                <div class="card-footer primary-colour"><a href="https://github.com/jack-fletcher/Bloodletting" target="_blank" class="dashed-border accent-text">GitHub</a><a href="https://www.youtube.com/watch?v=wCudxiSCA3w&feature=youtu.be" target="_blank" class="dashed-border accent-text">YouTube</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Bloodletting
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/bloodletting.webp" />
+              <source type="image/png" srcset="assets/img/bloodletting.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/bloodletting.webp"
+                alt="Bloodletting"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a
+                href="https://github.com/jack-fletcher/Bloodletting"
+                target="_blank"
+                class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="https://www.youtube.com/watch?v=wCudxiSCA3w&feature=youtu.be"
+                target="_blank"
+                class="dashed-border accent-text"
+                >YouTube</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Dhelve</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/dhelve.webp">
-                    <source type="image/png" srcset="assets/img/dhelve.png">
-                    <img class="vertical-card-image" src="assets/img/dhelve.webp" alt="Dhelve">
-                </picture>
-                <div class="card-footer primary-colour"><a href="https://github.com/jack-fletcher/Dhelve" target="_blank" class="dashed-border accent-text">GitHub</a><a href="https://youtu.be/fFcQS0qFXKE" target="_blank" class="dashed-border accent-text">YouTube</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Dhelve
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/dhelve.webp" />
+              <source type="image/png" srcset="assets/img/dhelve.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/dhelve.webp"
+                alt="Dhelve"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a
+                href="https://github.com/jack-fletcher/Dhelve"
+                target="_blank"
+                class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="https://youtu.be/fFcQS0qFXKE"
+                target="_blank"
+                class="dashed-border accent-text"
+                >YouTube</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Highway Hero</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/highway-hero.webp">
-                    <source type="image/png" srcset="assets/img/highway-hero.png">
-                    <img class="vertical-card-image" src="assets/img/highway-hero.webp" alt="Highway Hero">
-                </picture>
-                <div class="card-footer primary-colour"><a href="https://github.com/jack-fletcher/Highway-Hero" target="_blank" class="dashed-border accent-text">GitHub</a><a href="https://j-ack.itch.io/highway-hero" target="_blank" class="dashed-border accent-text">Home Page</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Highway Hero
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/highway-hero.webp" />
+              <source type="image/png" srcset="assets/img/highway-hero.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/highway-hero.webp"
+                alt="Highway Hero"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a
+                href="https://github.com/jack-fletcher/Highway-Hero"
+                target="_blank"
+                class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="https://j-ack.itch.io/highway-hero"
+                target="_blank"
+                class="dashed-border accent-text"
+                >Home Page</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Necromancer-Game</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/necromancer.webp">
-                    <source type="image/png" srcset="assets/img/necromancer.png">
-                    <img class="vertical-card-image" src="assets/img/necromancer.webp" alt="Necromancer-Game">
-                </picture>
-                <div class="card-footer primary-colour"><a href="https://github.com/jack-fletcher/Necromancer-Game" target="_blank" class="dashed-border accent-text">GitHub</a><a href="https://youtu.be/hKhJGScfOJk" target="_blank" class="dashed-border accent-text">YouTube</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Necromancer-Game
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/necromancer.webp" />
+              <source type="image/png" srcset="assets/img/necromancer.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/necromancer.webp"
+                alt="Necromancer-Game"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a
+                href="https://github.com/jack-fletcher/Necromancer-Game"
+                target="_blank"
+                class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="https://youtu.be/hKhJGScfOJk"
+                target="_blank"
+                class="dashed-border accent-text"
+                >YouTube</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">RuneCom</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/runecom.webp">
-                    <source type="image/png" srcset="assets/img/runecom.png">
-                    <img class="vertical-card-image" src="assets/img/runecom.webp" alt="RuneCom">
-                </picture>
-                <div class="card-footer primary-colour"><a href="https://github.com/jack-fletcher/RuneCom" target="_blank" class="dashed-border accent-text">GitHub</a><a href="https://play.google.com/store/apps/details?id=com.runecom" target="_blank" class="dashed-border accent-text">Play Store</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            RuneCom
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/runecom.webp" />
+              <source type="image/png" srcset="assets/img/runecom.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/runecom.webp"
+                alt="RuneCom"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a
+                href="https://github.com/jack-fletcher/RuneCom"
+                target="_blank"
+                class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="https://play.google.com/store/apps/details?id=com.runecom"
+                target="_blank"
+                class="dashed-border accent-text"
+                >Play Store</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Currency Converter</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/currency-converter.webp">
-                    <source type="image/png" srcset="assets/img/currency-converter.png">
-                    <img class="vertical-card-image" src="assets/img/currency-converter.webp" alt="Currency Converter">
-                </picture>
-                <div class="card-footer primary-colour"><a href="" target="_blank" class="dashed-border accent-text">GitHub</a><a href="currency_converter.html" class="dashed-border accent-text">Example</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Currency Converter
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source
+                type="image/webp"
+                srcset="assets/img/currency-converter.webp"
+              />
+              <source
+                type="image/png"
+                srcset="assets/img/currency-converter.png"
+              />
+              <img
+                class="vertical-card-image"
+                src="assets/img/currency-converter.webp"
+                alt="Currency Converter"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a href="https://github.com/jack-fletcher/web-principles-portfolio-site" target="_blank" class="dashed-border accent-text"
+                >GitHub</a
+              ><a
+                href="currency_converter.html"
+                class="dashed-border accent-text"
+                >Example</a
+              >
             </div>
+          </div>
         </div>
         <div class="card-border vertical-card">
-            <h2 class="primary-colour main-text card-title centered-text">Forecaster</h2>
-            <div>
-                <picture class="vertical-card-image">
-                    <source type="image/webp" srcset="assets/img/about-me.webp">
-                    <source type="image/png" srcset="assets/img/about-me.png">
-                    <img class="vertical-card-image" src="assets/img/about-me.webp" alt="Forecaster">
-                </picture>
-                <div class="card-footer primary-colour"><a href="" target="_blank" class="dashed-border accent-text">GitHub</a><a href="forecaster.html" class="dashed-border accent-text">Example</a></div>
+          <h2 class="primary-colour main-text card-title centered-text">
+            Forecaster
+          </h2>
+          <div>
+            <picture class="vertical-card-image">
+              <source type="image/webp" srcset="assets/img/forecaster.webp" />
+              <source type="image/png" srcset="assets/img/forecaster.png" />
+              <img
+                class="vertical-card-image"
+                src="assets/img/forecaster.webp"
+                alt="Forecaster"
+              />
+            </picture>
+            <div class="card-footer primary-colour">
+              <a href="https://github.com/jack-fletcher/web-principles-portfolio-site" target="_blank" class="dashed-border accent-text"
+                >GitHub</a
+              ><a href="forecaster.html" class="dashed-border accent-text"
+                >Example</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div id="contact-me" class="full-screen">
-    <h1 class="accent-text subtitle-spacing">Fancy a chat?</h1>
-    <div class="flex-container">
+    <div id="contact-me" class="full-screen">
+      <h1 class="accent-text subtitle-spacing">Fancy a chat?</h1>
+      <div class="flex-container">
         <div>
-            <p class="main-text">If you'd like to talk to me a bit more, please contact me using this form. Alternatively, you can follow me on <a href="https://github.com/jack-fletcher" target="_blank" class="accent-text">Github</a>, connect with me on <a href="https://www.linkedin.com/in/-jack-fletcher/" target="_blank" class="accent-text">LinkedIn</a>, or ping me an <a href="mailto:dev@jack-fletcher.me" class="accent-text">email</a>.</p>
+          <p class="main-text">
+            If you'd like to talk to me a bit more, please contact me using this
+            form. Alternatively, you can follow me on
+            <a
+              href="https://github.com/jack-fletcher"
+              target="_blank"
+              class="accent-text"
+              >Github</a
+            >, connect with me on
+            <a
+              href="https://www.linkedin.com/in/-jack-fletcher/"
+              target="_blank"
+              class="accent-text"
+              >LinkedIn</a
+            >, or ping me an
+            <a href="mailto:dev@jack-fletcher.me" class="accent-text">email</a>.
+          </p>
         </div>
-            <form action="mailto:dev@jack-fletcher.me?subject=Query" method=get target="_blank" id="contact-form">
-                <label class="contact-label main-text" for="subject">What can I help you with?</label>
-                <input class="primary-colour contact-textbox" required type="text" id="subject" name="subject" placeholder="Subject...">
-                <label class="contact-label main-text" for="full-name">Name:</label>
-                <input class="primary-colour contact-textbox" required type="text" id="full-name" name="full-name" placeholder="Your name...">
-                <label class="contact-label main-text" for="email-address">Email Address:</label>
-                <input class="primary-colour contact-textbox" required type="email" id="email-address" name="email-address" placeholder="Your email address...">
-                <label id="longform-message-label" class="contact-label main-text" for="longform-message">Message:</label>
-                <textarea class="primary-colour main-text contact-textbox" required maxlength=500 wrap="hard" cols=8 rows=6 form="contact-form" id="longform-message" name="body" placeholder="Type your message here..."></textarea>
-                <p class="main-text" id=longform-message-feedback-label></p>
-                <input class="primary-colour submit-button main-text" type="submit" value="Submit">
-            </form>
+        <form
+          action="mailto:dev@jack-fletcher.me?subject=Query"
+          method="get"
+          target="_blank"
+          id="contact-form"
+        >
+          <label class="contact-label main-text" for="subject"
+            >What can I help you with?</label
+          >
+          <input
+            class="primary-colour contact-textbox"
+            required
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject..."
+          />
+          <label class="contact-label main-text" for="full-name">Name:</label>
+          <input
+            class="primary-colour contact-textbox"
+            required
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="Your name..."
+          />
+          <label class="contact-label main-text" for="email-address"
+            >Email Address:</label
+          >
+          <input
+            class="primary-colour contact-textbox"
+            required
+            type="email"
+            id="email-address"
+            name="email-address"
+            placeholder="Your email address..."
+          />
+          <label
+            id="longform-message-label"
+            class="contact-label main-text"
+            for="longform-message"
+            >Message:</label
+          >
+          <textarea
+            class="primary-colour main-text contact-textbox"
+            oninput="longformMessageChecker()"
+            required
+            maxlength="500"
+            wrap="hard"
+            cols="8"
+            rows="6"
+            form="contact-form"
+            id="longform-message"
+            name="body"
+            placeholder="Type your message here..."
+          ></textarea>
+          <p class="main-text" id="longform-message-feedback-label"></p>
+          <input
+            class="primary-colour submit-button main-text"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
     </div>
-</div>
-<div class="primary-colour footer"><p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p></div>
-</body>
+    <div class="primary-colour footer">
+      <p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p>
+    </div>
+  </body>
 </html>
-

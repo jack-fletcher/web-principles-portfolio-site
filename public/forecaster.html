@@ -1,119 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/iPhone_11__iPhone_XR_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Pro_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/8.3__iPad_Mini_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.5__iPad_Air_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/12.9__iPad_Pro_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.2__iPad_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Pro_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.5__iPad_Air_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.9__iPad_Air_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_14_Pro_Max_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/iPhone_11__iPhone_XR_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/10.9__iPad_Air_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_14_Pro_Max_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/8.3__iPad_Mini_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/10.2__iPad_landscape.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png">
-        <link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/splashscreens/12.9__iPad_Pro_landscape.png">
-        <meta name="msapplication-TileColor" content="#603cba">
-        <meta name="msapplication-config" content="browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">    
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Jack Fletcher - Forecaster</title>
-    </head>
-<body class="background-colour">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/8.3__iPad_Mini_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.5__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/12.9__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.2__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/11__iPad_Pro__10.5__iPad_Pro_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.5__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.9__iPad_Air_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_11__iPhone_XR_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/10.9__iPad_Air_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_14_Pro_Max_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/8.3__iPad_Mini_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+      href="/assets/splashscreens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/10.2__iPad_landscape.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+      href="/assets/splashscreens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+      href="/assets/splashscreens/12.9__iPad_Pro_landscape.png"
+    />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Jack Fletcher - Forecaster</title>
+  </head>
+  <body class="background-colour">
     <nav class="primary-colour">
-        <div id="navigation-logo">
-          <picture class="user-logo">
-            <source type="image/webp" srcset="assets/img/logo.webp">
-            <source type="image/png" srcset="assets/img/logo.png">
-            <img
-              class="user-logo"
-              src="assets/img/logo.webp"
-              alt="Portfolio logo"
-            >
-          </picture>
-          <a class="user-logo-text accent-text" href="index.html#home">Jack Fletcher</a>
-        </div>
-        <div id="navigation-links" class="primary-colour">
-          <a
-            class="main-text navigation-link"
-            aria-label="Contact Me"
-            href="index.html#contact-me"
-            ><span class="icon-contact-me nav-img"></span
-          ></a>
-          <a
-            class="main-text navigation-link"
-            aria-label="Testimonials"
-            href="index.html#testimonials"
-            ><span class="icon-testimonials nav-img"></span
-          ></a>
-          <a
-            class="main-text navigation-link"
-            aria-label="Home"
-            href="index.html#home"
-            ><span class="icon-home nav-img"></span
-          ></a>
-          <a
-            class="main-text navigation-link"
-            aria-label="Projects"
-            href="index.html#projects"
-            ><span class="icon-projects nav-img"></span
-          ></a>
-          <a
-            class="main-text navigation-link"
-            aria-label="About Me"
-            href="index.html#about-me"
-            ><span class="icon-about-me nav-img"></span
-          ></a>
-        </div>
-      </nav>
-      <div class="full-screen">
-        <h1 style="padding-top: 3rem" class="accent-text centered-text">Currency Converter</h1>
-        <div class="chart-container">
-                <canvas id="forecaster-chart"></canvas>
-        </div>
-        <p id="feedback-text" class="main-text"></p>
-        <div class="forecaster-button-container">
-            <button id="scrollAllLeftBtn" class="primary-colour submit-button main-text" onclick="scrollAllChartLeft()">&lt;&lt;</button>
-            <button id="scrollLeftBtn" class="primary-colour submit-button main-text" onclick="scrollChartLeft()">&lt;</button>
-            <button class="primary-colour submit-button main-text" onclick="switchMode()">Switch mode</button>
-            <button id="scrollRightBtn" class="primary-colour submit-button main-text" onclick="scrollChartRight()">&gt;</button>
-            <button id="scrollAllRightBtn" class="primary-colour submit-button main-text" onclick="scrollAllChartRight()">&gt;&gt;</button>
-        </div>
+      <div id="navigation-logo">
+        <picture class="user-logo">
+          <source type="image/webp" srcset="assets/img/logo.webp" />
+          <source type="image/png" srcset="assets/img/logo.png" />
+          <img
+            class="user-logo"
+            src="assets/img/logo.webp"
+            alt="Portfolio logo"
+          />
+        </picture>
+        <a class="user-logo-text accent-text" href="index.html#home"
+          >Jack Fletcher</a
+        >
       </div>
-      <div class="primary-colour footer"><p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p></div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <div id="navigation-links" class="primary-colour">
+        <a
+          class="main-text navigation-link"
+          aria-label="Contact Me"
+          href="index.html#contact-me"
+          ><span class="icon-contact-me nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Testimonials"
+          href="index.html#testimonials"
+          ><span class="icon-testimonials nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Home"
+          href="index.html#home"
+          ><span class="icon-home nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="Projects"
+          href="index.html#projects"
+          ><span class="icon-projects nav-img"></span
+        ></a>
+        <a
+          class="main-text navigation-link"
+          aria-label="About Me"
+          href="index.html#about-me"
+          ><span class="icon-about-me nav-img"></span
+        ></a>
+      </div>
+    </nav>
+    <div class="full-screen">
+      <h1 style="padding-top: 3rem" class="accent-text centered-text">
+        Fuel Forecaster
+      </h1>
+      <div class="chart-container">
+        <canvas id="forecaster-chart"></canvas>
+      </div>
+      <p id="feedback-text" class="main-text"></p>
+      <div class="forecaster-button-container">
+        <button
+          id="scrollAllLeftBtn"
+          class="primary-colour submit-button main-text"
+          onclick="scrollAllChartLeft()"
+        >
+          &lt;&lt;
+        </button>
+        <button
+          id="scrollLeftBtn"
+          class="primary-colour submit-button main-text"
+          onclick="scrollChartLeft()"
+        >
+          &lt;
+        </button>
+        <button
+          class="primary-colour submit-button main-text"
+          onclick="switchMode()"
+        >
+          Switch mode
+        </button>
+        <button
+          id="scrollRightBtn"
+          class="primary-colour submit-button main-text"
+          onclick="scrollChartRight()"
+        >
+          &gt;
+        </button>
+        <button
+          id="scrollAllRightBtn"
+          class="primary-colour submit-button main-text"
+          onclick="scrollAllChartRight()"
+        >
+          &gt;&gt;
+        </button>
+      </div>
+    </div>
+    <div class="primary-colour footer">
+      <p class="main-text">Jack Fletcher at dev@jack-fletcher.me</p>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </html>

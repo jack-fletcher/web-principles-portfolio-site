@@ -33,17 +33,14 @@ self.addEventListener("install", function (event) {
         "assets/img/samantha-sully-photo.webp",
         "assets/img/testimonials.svg",
         "assets/img/testimonials.webp",
-        "assets/img/runecom.webp",
         "index.html",
         "forecaster.html",
         "currency_converter.html",
-        "/css/whatever-v3.css",
-        "/css/imgs/sprites-v6.png",
-        "/assets/fonts/icomoon.woff",
+        "assets/fonts/icomoon/icomoon.woff",
         "assets/fonts/notosans/woff2/NotoSans-Black.woff2",
         "assets/fonts/notosans/woff/NotoSans-Black.woff",
-        "/js/main.js",
-        "/sw.js",
+        "js/main.js",
+        "sw.js",
       ]);
     })
   );
