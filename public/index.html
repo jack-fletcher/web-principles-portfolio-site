@@ -252,9 +252,54 @@
     </nav>
     <div id="home" class="full-screen">
       <h1 class="accent-text centered-text fade-in-2s">Hi, I'm Jack.</h1>
-      <h2 class="main-text centered-text fade-in-4s">Software Engineer</h2>
-      <h2 class="main-text centered-text fade-in-6s">Game Developer</h2>
-      <h2 class="main-text centered-text fade-in-8s">Cat Fan</h2>
+      <h2 class="main-text centered-text fade-in-4s">
+        Software Engineer
+        <!-- svg derived from: https://www.svgrepo.com/svg/43432/tick -->
+        <svg
+          class="tick-svg"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 490 490"
+          xml:space="preserve"
+        >
+          <polygon
+            points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "
+          />
+        </svg>
+      </h2>
+      <h2 class="main-text centered-text fade-in-6s">
+        Game Developer
+        <!-- svg derived from: https://www.svgrepo.com/svg/43432/tick -->
+        <svg
+          class="tick-svg"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 490 490"
+          xml:space="preserve"
+        >
+          <polygon
+            points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "
+          />
+        </svg>
+      </h2>
+      <h2 class="main-text centered-text fade-in-8s">
+        Cat Fan
+        <!-- svg derived from: https://www.svgrepo.com/svg/43432/tick -->
+        <svg
+          class="tick-svg"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 490 490"
+          xml:space="preserve"
+        >
+          <polygon
+            points="452.253,28.326 197.831,394.674 29.044,256.875 0,292.469 207.253,461.674 490,54.528 "
+          />
+        </svg>
+      </h2>
     </div>
     <div id="about-me" class="full-screen">
       <div class="horizontal-card">
@@ -273,34 +318,34 @@
             opportunity to work with some incredible tools:
           </p>
           <ul class="list">
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">C#</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">Java</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">Matlab</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">HTML/CSS</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">Unity Engine</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">Python</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">C++</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">React</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">React Native</span>
             </li>
-            <li class="list-item accent-text">
+            <li class="list-item list-item-style-upper-roman accent-text">
               <span class="main-text">Oracle SQL</span>
             </li>
           </ul>
@@ -327,8 +372,14 @@
               Currently, I'm working on some exciting secret things for
               Runescape at Jagex! My job role focuses on both the creative and
               technical aspects of game development; where I own my projects
-              from design to release.
+              from design to release. Some examples of the technologies used include:
             </p>
+            <ul class="list">
+              <li class="list-item accent-text"><span class="main-text">Jira</span></li>
+              <li class="list-item accent-text"><span class="main-text">Fisheye</span></li>
+              <li class="list-item accent-text"><span class="main-text">Confluence</span></li>
+              <li class="list-item accent-text"><span class="main-text">RuneScript</span></li>
+            </ul>
           </div>
         </div>
         <div class="horizontal-card">
@@ -347,7 +398,13 @@
               I used a proprietary programming language called 'Prism' alongside
               inhouse tools to develop routing rules and visuals for customers
               documents based on technical requirements and customer feedback.
+              Some examples of the technologies used include:
             </p>
+            <ul class="list">
+              <li class="list-item accent-text"><span class="main-text">Adobe Photoshop</span></li>
+              <li class="list-item accent-text"><span class="main-text">Microsoft Teams</span></li>
+              <li class="list-item accent-text"><span class="main-text">Sublime Text</span></li>
+            </ul>           
           </div>
         </div>
       </div>
@@ -526,10 +583,12 @@
                 srcset="assets/img/samantha-sully-photo-2x.png"
               />
               <source
+                media="(max-width: 799px"
                 type="image/webp"
                 srcset="assets/img/samantha-sully-photo.webp"
               />
               <source
+                media="(max-width: 799px"
                 type="image/jpg"
                 srcset="assets/img/samantha-sully-photo.jpg"
               />
@@ -746,7 +805,10 @@
               />
             </picture>
             <div class="card-footer primary-colour">
-              <a href="https://github.com/jack-fletcher/web-principles-portfolio-site" target="_blank" class="dashed-border accent-text"
+              <a
+                href="https://github.com/jack-fletcher/web-principles-portfolio-site"
+                target="_blank"
+                class="dashed-border accent-text"
                 >GitHub</a
               ><a
                 href="currency_converter.html"
@@ -771,7 +833,10 @@
               />
             </picture>
             <div class="card-footer primary-colour">
-              <a href="https://github.com/jack-fletcher/web-principles-portfolio-site" target="_blank" class="dashed-border accent-text"
+              <a
+                href="https://github.com/jack-fletcher/web-principles-portfolio-site"
+                target="_blank"
+                class="dashed-border accent-text"
                 >GitHub</a
               ><a href="forecaster.html" class="dashed-border accent-text"
                 >Example</a
@@ -873,3 +938,5 @@
     </div>
   </body>
 </html>
+
+style="position:absolute;z-index: -1;"

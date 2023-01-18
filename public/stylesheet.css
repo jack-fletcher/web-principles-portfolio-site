@@ -203,6 +203,7 @@ nav > #navigation-logo {
   justify-content: space-between;
   gap: 10vh;
 }
+
 .horizontal-card,
 .testimony-horizontal-card {
   display: flex;
@@ -276,10 +277,13 @@ nav > #navigation-logo {
   flex-wrap: wrap;
 }
 .list-item {
-  list-style-type: upper-roman;
   flex: 1 0 auto;
   justify-content: space-between;
   flex-basis: 50%;
+}
+
+.list-item-style-upper-roman {
+ list-style-type: upper-roman;
 }
 .footer {
   text-align: right;
@@ -342,6 +346,10 @@ input:valid {
   padding: 10px;
 }
 
+picture {
+  width: 50%;
+}
+
 table {
   width: 90%;
   margin: auto;
@@ -396,6 +404,11 @@ a {
   margin: 5%;
 }
 
+.tick-svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--accent-text);
+}
 /* currency-converter */
 
 #currency-converter-form {
@@ -476,7 +489,6 @@ select {
 @media only screen and (max-width: 800px) {
   nav {
     bottom: 0;
-    /* position:stick; */
   }
   .footer {
     position: relative;
@@ -501,6 +513,7 @@ select {
   }
   .horizontal-card {
     flex-direction: column;
+    max-width: auto;
   }
   .card-image {
     align-self: center;
