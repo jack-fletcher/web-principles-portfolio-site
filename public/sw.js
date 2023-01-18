@@ -1,5 +1,11 @@
-//derived from this: https://web.dev/offline-cookbook/#on-install-as-dependency
+//derived from this: https://sonalake.com/latest/introduction-to-progressive-web-applications-part-2/
+self.addEventListener('fetch',(event) => 
+{
 
+}
+);
+
+//derived from this: https://web.dev/offline-cookbook/#on-install-as-dependency
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("jf-portfolio-site").then(function (cache) {
